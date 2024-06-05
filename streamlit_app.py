@@ -18,7 +18,7 @@ st.dataframe(data=my_dataframe, use_container_width=True)
 
 #convert the snowflake dataframe to pandas dataframe so we can use loc function
 pd_df = my_dataframe.to_pandas()
-st.dataframe(pandas_df)
+st.dataframe(pd_df)
                                                                                              
 ingredients_list = st.multiselect(
     "Choose upto 5 ingredients:",
